@@ -1,4 +1,4 @@
-# script by @WynkMusicRobot
+# script by @M4_Music_Bot
 
 import telebot
 import subprocess
@@ -141,7 +141,7 @@ def add_user(message):
         else:
             response = "Please specify a user ID and the duration (e.g., 1hour, 2days, 3weeks, 4months) to add 😘."
     else:
-        response = "You have not purchased yet purchase now from:- @WynkMusicRobot."
+        response = "You have not purchased yet purchase now from:- @M4_Music_Bot."
 
     bot.reply_to(message, response)
 
@@ -176,7 +176,7 @@ def remove_user(message):
             response = '''Please Specify A User ID to Remove. 
 ✅ Usage: /remove <userid>'''
     else:
-        response = "You have not purchased yet purchase now from:- @WynkMusicRobot 🙇."
+        response = "You have not purchased yet purchase now from:- @M4_Music_Bot 🙇."
 
     bot.reply_to(message, response)
 
@@ -196,7 +196,7 @@ def clear_logs_command(message):
         except FileNotFoundError:
             response = "Logs are already cleared ❌."
     else:
-        response = "You have not purchased yet purchase now from :- @WynkMusicRobot ❄."
+        response = "You have not purchased yet purchase now from :- @M4_Music_Bot ❄."
     bot.reply_to(message, response)
 
 # Command handler to clear users
@@ -215,7 +215,7 @@ def clear_users_command(message):
         except FileNotFoundError:
             response = "users are already cleared ❌."
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @WynkMusicRobot 🙇."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @M4_Music_Bot 🙇."
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['allusers'])
@@ -239,7 +239,7 @@ def show_all_users(message):
         except FileNotFoundError:
             response = "No data found ❌"
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @WynkMusicRobot ❄."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @M4_Music_Bot ❄."
     bot.reply_to(message, response)
 
 # Command handler to show recent logs
@@ -258,7 +258,7 @@ def show_recent_logs(message):
             response = "No data found ❌"
             bot.reply_to(message, response)
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @WynkMusicRobot ❄."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @M4_Music_Bot ❄."
         bot.reply_to(message, response)
 
 # New function to periodically send the "Bot is active" message every 55 minutes
@@ -268,7 +268,7 @@ def send_periodic_message():
             try:
                 bot.send_message(user_id, '''ʙᴏᴛ ɪs ᴀʟɪᴠᴇ ʙᴀʙᴜ ❤️
 
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥@WynkMusicRobot⏤͟͟͞͞★🕊️''')
+❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥@M4_Music_Bot⏤͟͟͞͞★🕊️''')
             except Exception as e:
                 print(f"Failed to send message to {user_id}: {e}")
         time.sleep(3300)  # Wait 55 minutes before sending the message again
@@ -281,7 +281,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃💛🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: VIP- User of @WynkMusicRobot✅"
+    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃💛🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: VIP- User of @M4_Music_Bot✅"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi2 command
@@ -373,7 +373,7 @@ bot.reply_to(message, attack_start_message, parse_mode="Markdown")# Send the att
         else:
             response = "✅ Usage :- /bgmi2 <target> <port> <time>"  # Updated command syntax
     else:
-        response = "🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /bgmi2 command. DM TO BUY ACCESS:- @WynkMusicRobot"
+        response = "🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /bgmi2 command. DM TO BUY ACCESS:- @M4_Music_Bot"
 
     bot.reply_to(message, response)
 
@@ -408,7 +408,7 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @WynkMusicRobot'''
+Buy From :- @M4_Music_Bot'''
     bot.reply_to(message, help_text)
 
 @bot.message_handler(commands=['start'])
@@ -416,7 +416,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴅᴅᴏs ʙᴏᴛ, {user_name}! ᴛʜɪs ɪs ʜɪɢʜ ǫᴜᴀʟɪᴛʏ sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴅᴅᴏs. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇss.
 🤖Try To Run This Command : /help 
-✅BUY :- @WynkMusicRobot'''
+✅BUY :- @M4_Music_Bot'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
@@ -489,3 +489,4 @@ while True:
         bot.polling(none_stop=True, timeout=60)
     except Exception as e:
         print(e)
+                
