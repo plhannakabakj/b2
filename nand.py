@@ -317,7 +317,7 @@ def run_attack_and_notify(message, user_id, target, port, time):
         markup = InlineKeyboardMarkup()
         button = InlineKeyboardButton(
             "🫧 ᴍᴜsᴛ ᴄʜᴇᴄᴋᴏᴜᴛ ᴛʜɪs 🫧", 
-            url="https://t.me/WynkMusicRobot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users"
+            url="https://t.me/M4_Music_Bot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users"
         )
         markup.add(button)
         
@@ -355,15 +355,17 @@ def handle_bgmi2(message):
                 log_command(user_id, target, port, time)
                 
                 # Immediate response after attack initiation
-                username = message.from_user.username if message.from_user.username else message.from_user.first_name
-                attack_start_message = (
-                    f"{username}, 𝐀𝐭𝐭𝐚𝐜𝐤 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 😁♥️\n\n"
-                    f"𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n"
-                    f"𝐏𝐨𝐫𝐭: {port}\n"
-                    f"𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n"
-                    f"𝐌𝐞𝐭𝐡𝐨𝐝: VIP- User of :- @WynkMusicRobot."
-                )
-                bot.reply_to(message, attack_start_message)  # Send the attack initiation message
+username = message.from_user.username if message.from_user.username else message.from_user.first_name
+username = f"@{username}" if message.from_user.username else username  # @ जोड़ें
+
+attack_start_message = (
+    f"{username}, 𝐀𝐭𝐭𝐚𝐜𝐤 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐒𝐭𝐚𝐫𝐭𝐞𝐝 😁♥️\n\n"
+    f"𝐓𝐚𝐫𝐠𝐞𝐭: `{target}`\n"
+    f"𝐏𝐨𝐫𝐭: `{port}`\n"
+    f"𝐓𝐢𝐦𝐞: `{time}` 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n"
+    f"𝐌𝐞𝐭𝐡𝐨𝐝: [ᴍᴜsɪᴄ ʙᴏᴛ](https://t.me/M4_Music_BoT?start=help)"
+)
+bot.reply_to(message, attack_start_message, parse_mode="Markdown")# Send the attack initiation message
                 
                 # Run the attack in a separate thread to allow the bot to respond immediately
                 threading.Thread(target=run_attack_and_notify, args=(message, user_id, target, port, time)).start()
